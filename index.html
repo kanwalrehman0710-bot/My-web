@@ -79,6 +79,27 @@ body{
     50%{transform:translateY(-20px);}
     100%{transform:translateY(0);}
 }
+.petal{
+    position:fixed;
+    top:-10%;
+    width:15px;
+    height:15px;
+    background:radial-gradient(circle,#8b0000,#000);
+    border-radius:50%;
+    opacity:0.7;
+    animation:fall 6s linear infinite;
+}
+
+.petal:nth-child(1){left:10%; animation-delay:0s;}
+.petal:nth-child(2){left:30%; animation-delay:2s;}
+.petal:nth-child(3){left:50%; animation-delay:4s;}
+.petal:nth-child(4){left:70%; animation-delay:1s;}
+.petal:nth-child(5){left:90%; animation-delay:3s;}
+
+@keyframes fall{
+    0%{transform:translateY(0) rotate(0);}
+    100%{transform:translateY(110vh) rotate(360deg);}
+}
     
 body{
     margin:0;
