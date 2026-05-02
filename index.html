@@ -5,6 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luxury Perfume Store</title>
 <style>
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 40px;
+    color:white;
+}
+
+.hero-left h1{
+    font-size:40px;
+    color:#d4af37;
+}
+
+.hero-left p{
+    color:#ccc;
+}
+
+.logo{
+    font-size:40px;
+}
+
+.hero-center{
+    flex:1;
+    text-align:center;
+}
+
+.perfume{
+    width:220px;
+    border-radius:15px;
+    box-shadow:0 0 30px rgba(212,175,55,0.4);
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0px);}
+}
+
+    
 body{
     margin:0;
     font-family:Arial, sans-serif;
