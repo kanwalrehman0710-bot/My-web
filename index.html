@@ -3,20 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Royal Essence Perfume</title>
+<title>Royal Essence</title>
 
 <style>
-
-/* ================= BACKGROUND ================= */
 body{
     margin:0;
-    font-family:'Georgia', serif;
+    font-family:Georgia, serif;
     background:url("https://img.freepik.com/free-photo/gold-background-texture-gradients-shadow-ai-generative_1258-209615.jpg");
     background-size:cover;
-    overflow-x:hidden;
     color:white;
+    overflow-x:hidden;
 }
-
 body::before{
     content:"";
     position:fixed;
@@ -25,122 +22,96 @@ body::before{
     z-index:-1;
 }
 
-/* ================= ROSE PETALS FALL ================= */
+/* petals (one-by-one falling) */
 .petal{
     position:fixed;
     top:-10%;
-    width:45px;
-    opacity:0.8;
+    width:40px;
     animation:fall 8s linear infinite;
 }
-
-.petal:nth-child(1){left:5%; animation-delay:0s;}
-.petal:nth-child(2){left:20%; animation-delay:2s;}
-.petal:nth-child(3){left:40%; animation-delay:1s;}
-.petal:nth-child(4){left:60%; animation-delay:3s;}
-.petal:nth-child(5){left:80%; animation-delay:4s;}
+.p1{left:10%; animation-delay:0s;}
+.p2{left:30%; animation-delay:2s;}
+.p3{left:50%; animation-delay:1s;}
+.p4{left:70%; animation-delay:3s;}
+.p5{left:90%; animation-delay:4s;}
 
 @keyframes fall{
-    0%{transform:translateY(0);}
-    100%{transform:translateY(120vh);}
+    from{transform:translateY(0);}
+    to{transform:translateY(120vh);}
 }
 
-/* ================= HERO ================= */
+/* hero */
 .hero{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:70px;
+    padding:60px;
     min-height:90vh;
 }
 
-/* LEFT SCENE */
 .left{
     flex:1;
     position:relative;
 }
 
-/* PERFUME (BIG + CUTOUT FEEL) */
+/* transparent perfume */
 .perfume{
-    width:500px;
-    transform:scale(1.1);
-    filter:drop-shadow(0 0 60px rgba(139,0,0,0.8));
+    width:480px;
+    filter:drop-shadow(0 0 50px rgba(139,0,0,0.7));
 }
 
-/* ROSES */
+/* decor */
 .rose{
     position:absolute;
-    top:20px;
+    top:40px;
     right:60px;
-    width:90px;
-}
-
-.blackrose{
-    position:absolute;
-    bottom:40px;
-    right:140px;
     width:80px;
 }
-
-/* CHERRY */
 .cherry{
     position:absolute;
-    top:160px;
-    left:40px;
+    top:150px;
+    left:30px;
     width:70px;
 }
 
-/* TEXT */
+/* text */
 .right{
     flex:1;
     padding-left:40px;
 }
-
 .right h1{
-    font-size:65px;
+    font-size:60px;
     color:#d4af37;
     font-style:italic;
 }
+.right p{color:#ddd;}
 
-.right p{
-    color:#ddd;
-    font-size:18px;
-}
-
-/* ================= PRODUCTS ================= */
+/* products */
 header{
     text-align:center;
-    font-size:28px;
     color:#d4af37;
+    font-size:28px;
     padding:20px;
 }
-
 .container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
     padding:40px;
 }
-
 .card{
     background:rgba(0,0,0,0.7);
     border:1px solid rgba(212,175,55,0.4);
-    border-radius:12px;
-    text-align:center;
+    border-radius:10px;
     padding:12px;
+    text-align:center;
 }
-
 .card img{
     width:100%;
     height:220px;
     object-fit:cover;
     border-radius:10px;
 }
-
-h3{color:#d4af37;}
-
-.desc{color:#ccc;font-size:14px;}
-
 .btn{
     display:inline-block;
     margin-top:10px;
@@ -150,67 +121,55 @@ h3{color:#d4af37;}
     text-decoration:none;
     border-radius:6px;
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- ROSE PETALS -->
-<div class="petal"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="45"></div>
-<div class="petal"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="45"></div>
-<div class="petal"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="45"></div>
-<div class="petal"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="45"></div>
-<div class="petal"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="45"></div>
+<!-- petals -->
+<div class="petal p1"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="40"></div>
+<div class="petal p2"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="40"></div>
+<div class="petal p3"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="40"></div>
+<div class="petal p4"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="40"></div>
+<div class="petal p5"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="40"></div>
 
-<!-- HERO -->
 <section class="hero">
-
 <div class="left">
 
-    <!-- PERFUME IMAGE (BIGGER + CENTER FEEL) -->
-    <img class="perfume" src="https://raw.githubusercontent.com/kanwalrehman0710-bot/My-web/refs/heads/main/Gemini_Generated_Image_kse69kkse69kkse6.png">
+<!-- 👇 yahan apna transparent PNG link daalna -->
+<img class="perfume" src="YOUR_TRANSPARENT_IMAGE_LINK">
 
-    <!-- ROSE + CHERRY -->
-    <img class="rose" src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png">
-    <img class="blackrose" src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
-    <img class="cherry" src="https://cdn-icons-png.flaticon.com/512/590/590685.png">
+<img class="rose" src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png">
+<img class="cherry" src="https://cdn-icons-png.flaticon.com/512/590/590685.png">
 
 </div>
 
 <div class="right">
 <h1>Royal Essence</h1>
-<p>Luxury perfume crafted with elegance, passion and royal identity.</p>
+<p>Luxury perfume crafted with elegance and bold identity.</p>
 </div>
-
 </section>
 
-<!-- PRODUCTS -->
 <header>Exclusive Collection</header>
 
 <div class="container">
-
 <div class="card">
 <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
 <h3>Red Luxury</h3>
-<p class="desc">Bold royal fragrance.</p>
 <a class="btn" href="https://www.daraz.pk">Buy Now</a>
 </div>
 
 <div class="card">
 <img src="https://media.istockphoto.com/id/656612166/photo/bottle.jpg">
 <h3>Black Premium</h3>
-<p class="desc">Dark elegant scent.</p>
 <a class="btn" href="https://www.daraz.pk">Buy Now</a>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1608528577891-eb055944f2e7">
 <h3>Midnight Elegance</h3>
-<p class="desc">Soft luxury fragrance.</p>
 <a class="btn" href="https://www.daraz.pk">Buy Now</a>
 </div>
-
 </div>
 
 </body>
