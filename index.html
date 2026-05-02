@@ -3,43 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxury Perfume Store</title>
+<title>Luxury Perfume House</title>
 
 <style>
 
-/* ================= BACKGROUND ================= */
+/* ================= BASE ================= */
 body{
     margin:0;
     font-family:'Georgia', serif;
-    background:url("https://img.freepik.com/free-photo/gold-background-texture-gradients-shadow-ai-generative_1258-209615.jpg?semt=ais_rp_progressive&w=740&q=80");
-    background-size:cover;
+    background: radial-gradient(circle at top, #1a0000, #000000);
     color:white;
     overflow-x:hidden;
 }
 
-/* dark overlay */
-body::before{
-    content:"";
-    position:fixed;
-    top:0;left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.65);
-    z-index:-1;
-}
-
-/* ================= ROSE PETALS IMAGE ================= */
+/* ================= ROSE PETALS ================= */
 .petal{
     position:fixed;
-    top:-20%;
-    width:60px;
-    opacity:0.7;
+    top:-10%;
+    width:14px;
+    height:22px;
+    background:radial-gradient(circle at 30% 30%, #ff4d6d, #8b0000);
+    border-radius:60% 60% 60% 60%;
+    opacity:0.85;
     animation:fall 9s linear infinite;
 }
 
-.petal:nth-child(1){left:10%;}
-.petal:nth-child(2){left:40%; animation-delay:3s;}
-.petal:nth-child(3){left:75%; animation-delay:5s;}
+.petal:nth-child(1){left:5%; animation-delay:0s;}
+.petal:nth-child(2){left:15%; animation-delay:2s;}
+.petal:nth-child(3){left:25%; animation-delay:1s;}
+.petal:nth-child(4){left:35%; animation-delay:3s;}
+.petal:nth-child(5){left:45%; animation-delay:4s;}
+.petal:nth-child(6){left:55%; animation-delay:1.5s;}
+.petal:nth-child(7){left:65%; animation-delay:2.5s;}
+.petal:nth-child(8){left:75%; animation-delay:3.5s;}
+.petal:nth-child(9){left:85%; animation-delay:4.5s;}
+.petal:nth-child(10){left:95%; animation-delay:5s;}
 
 @keyframes fall{
     0%{transform:translateY(0) rotate(0);}
@@ -53,6 +51,7 @@ body::before{
     align-items:center;
     padding:70px;
     min-height:90vh;
+    position:relative;
 }
 
 .hero-left{
@@ -64,42 +63,65 @@ body::before{
     color:#d4af37;
     font-style:italic;
     letter-spacing:2px;
+    text-shadow:0 0 25px rgba(212,175,55,0.5);
 }
 
 .hero-left p{
-    color:#ddd;
+    color:#ccc;
     font-size:18px;
     line-height:1.5;
 }
 
-/* YOUR PERFUME IMAGE */
+/* ================= PERFUME ================= */
 .hero img{
     width:280px;
     border-radius:20px;
-    box-shadow:0 0 60px rgba(212,175,55,0.5);
+    box-shadow:0 0 60px rgba(139,0,0,0.7);
     animation:float 3s infinite;
 }
 
 @keyframes float{
     0%{transform:translateY(0);}
-    50%{transform:translateY(-20px);}
+    50%{transform:translateY(-18px);}
     100%{transform:translateY(0);}
 }
 
+/* ================= DECOR ITEMS ================= */
+.cherry{
+    position:absolute;
+    top:120px;
+    right:80px;
+    width:60px;
+}
+
+.blackrose{
+    position:absolute;
+    bottom:120px;
+    left:80px;
+    width:70px;
+}
+
 /* ================= PRODUCTS ================= */
+header{
+    text-align:center;
+    font-size:28px;
+    color:#d4af37;
+    padding:20px;
+    letter-spacing:3px;
+}
+
 .container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
     padding:40px;
 }
 
 .card{
-    background:rgba(0,0,0,0.75);
+    background:rgba(0,0,0,0.7);
     border:1px solid rgba(212,175,55,0.4);
     border-radius:15px;
-    padding:15px;
-    text-align:left;
+    padding:12px;
     transition:0.3s;
 }
 
@@ -111,23 +133,19 @@ body::before{
     width:100%;
     height:220px;
     object-fit:cover;
-    border-radius:12px;
+    border-radius:10px;
 }
 
-/* ================= TEXT ================= */
 h3{
     color:#d4af37;
-    margin-top:10px;
 }
 
 .desc{
     font-size:14px;
     color:#ccc;
-    margin:8px 0;
     line-height:1.4;
 }
 
-/* ================= BUTTON ================= */
 .btn{
     display:inline-block;
     margin-top:10px;
@@ -139,73 +157,66 @@ h3{
     font-weight:bold;
 }
 
-/* ================= HEADER ================= */
-header{
-    text-align:center;
-    font-size:28px;
-    padding:20px;
-    color:#d4af37;
-    letter-spacing:3px;
-}
-
 </style>
 </head>
 
 <body>
 
 <!-- ROSE PETALS -->
-<img class="petal" src="https://img.magnific.com/free-vector/realistic-rose-petals-isolated_134830-802.jpg">
-<img class="petal" src="https://img.magnific.com/free-vector/realistic-rose-petals-isolated_134830-802.jpg">
-<img class="petal" src="https://img.magnific.com/free-vector/realistic-rose-petals-isolated_134830-802.jpg">
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+
+<!-- DECOR -->
+<img class="cherry" src="https://cdn-icons-png.flaticon.com/512/590/590685.png">
+<img class="blackrose" src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png">
 
 <!-- HERO -->
 <section class="hero">
 
 <div class="hero-left">
-<h1>Luxury Perfume Store</h1>
+<h1>Royal Essence</h1>
 <p>
-Discover premium handcrafted perfumes designed for elegance, power, and timeless beauty.  
-Every bottle represents confidence, luxury, and personality.
+A luxury fragrance collection inspired by deep royal red elegance, crafted for bold personalities and timeless beauty.
 </p>
 </div>
 
-<img src="file:///E:/woek/Gemini_Generated_Image_3nvsyq3nvsyq3nvs.png">
+<!-- DARK RED ROYAL PERFUME -->
+<img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
 
 </section>
 
-<header>Exclusive Collection</header>
-
 <!-- PRODUCTS -->
+<header>Exclusive Perfume Collection</header>
+
 <div class="container">
 
-<!-- 1 -->
 <div class="card">
-<img src="https://plus.unsplash.com/premium_photo-1763213094860-0a0428bc1e6a">
+<img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
 <h3>Red Luxury</h3>
-<p class="desc">
-Deep burgundy fragrance inspired by royal elegance. Long-lasting, bold and perfect for evening luxury wear.
-</p>
-<a class="btn" href="https://www.daraz.pk/products/yacht-man-red-perfume-for-men-100-ml-i516137068-s2447411708.html" target="_blank">Buy Now</a>
+<p class="desc">Deep royal red fragrance with long lasting bold luxury scent.</p>
+<a class="btn" href="https://www.daraz.pk" target="_blank">Buy Now</a>
 </div>
 
-<!-- 2 -->
 <div class="card">
 <img src="https://media.istockphoto.com/id/656612166/photo/bottle.jpg">
 <h3>Black Premium</h3>
-<p class="desc">
-A mysterious dark scent with strong masculine notes. Minimalist black bottle for premium luxury experience.
-</p>
-<a class="btn" href="https://www.daraz.pk/products/100-i937357748-s3995991389.html" target="_blank">Buy Now</a>
+<p class="desc">Dark mysterious scent for elegant night luxury experience.</p>
+<a class="btn" href="https://www.daraz.pk" target="_blank">Buy Now</a>
 </div>
 
-<!-- 3 -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1608528577891-eb055944f2e7">
 <h3>Midnight Elegance</h3>
-<p class="desc">
-Elegant and soft fragrance with floral luxury notes. Designed for confident and graceful personalities.
-</p>
-<a class="btn" href="https://www.daraz.pk/products/100-i884155427-s3912952700.html" target="_blank">Buy Now</a>
+<p class="desc">Soft luxury floral fragrance for classy personality.</p>
+<a class="btn" href="https://www.daraz.pk" target="_blank">Buy Now</a>
 </div>
 
 </div>
