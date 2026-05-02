@@ -1,160 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfume Store</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0b0b0b;
-      color: white;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Perfume Store</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0b0b0b,#1a0000,#000000);
+    color:white;
+}
 
-    header {
-      background: #8b0000;
-      padding: 15px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
+header{
+    background:linear-gradient(90deg,#8b0000,#d4af37);
+    padding:20px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:1px;
+    box-shadow:0 0 20px rgba(212,175,55,0.5);
+}
 
-    nav {
-      display: flex;
-      justify-content: center;
-      background: black;
-      padding: 10px;
-    }
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+}
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.card{
+    background:rgba(0,0,0,0.75);
+    border:1px solid rgba(212,175,55,0.5);
+    border-radius:12px;
+    padding:12px;
+    text-align:center;
+    box-shadow:0 0 15px rgba(139,0,0,0.3);
+    transition:0.3s;
+}
 
-    nav a:hover {
-      color: #ff4d4d;
-    }
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px rgba(212,175,55,0.6);
+}
 
-    .container {
-      padding: 20px;
-    }
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
 
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 12px;
+    background:linear-gradient(90deg,#8b0000,#d4af37);
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
 
-    .card {
-      background: #1a1a1a;
-      border-radius: 10px;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(255,0,0,0.3);
-    }
+.btn:hover{
+    opacity:0.85;
+}
 
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #8b0000;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .btn:hover {
-      background: #ff0000;
-    }
-
-    .add-section {
-      margin-top: 30px;
-      background: #111;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 5px 0;
-      border: none;
-      border-radius: 5px;
-    }
-
-    button {
-      padding: 10px;
-      background: #8b0000;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+</style>
 </head>
 <body>
 
-<header>Luxury Perfume Store</header>
-
-<nav>
-  <a href="#">Home</a>
-  <a href="#">Shop</a>
-  <a href="#">Contact</a>
-</nav>
+<header>Luxury Perfume Collection</header>
 
 <div class="container">
-  <h2>Our Perfumes</h2>
 
-  <div class="product-grid" id="productGrid">
-    <!-- Products will appear here -->
-  </div>
-
-  <div class="add-section">
-    <h3>Add New Perfume</h3>
-    <input type="text" id="name" placeholder="Perfume Name">
-    <input type="text" id="image" placeholder="Image URL">
-    <input type="text" id="link" placeholder="Buy Link">
-    <button onclick="addProduct()">Add Product</button>
-  </div>
+<!-- 1 -->
+<div class="card">
+<img src="https://plus.unsplash.com/premium_photo-1763213094860-0a0428bc1e6a">
+<h3>Red Luxury Perfume</h3>
+<a class="btn" href="https://www.daraz.pk/products/yacht-man-red-perfume-for-men-100-ml-i516137068-s2447411708.html" target="_blank">Buy Now</a>
 </div>
 
-<script>
-  function addProduct() {
-    const name = document.getElementById('name').value;
-    const image = document.getElementById('image').value;
-    const link = document.getElementById('link').value;
+<!-- 2 -->
+<div class="card">
+<img src="https://media.istockphoto.com/id/656612166/photo/bottle.jpg">
+<h3>Black Premium Perfume</h3>
+<a class="btn" href="https://www.daraz.pk/products/100-i937357748-s3995991389.html" target="_blank">Buy Now</a>
+</div>
 
-    if (!name || !image || !link) {
-      alert('Please fill all fields');
-      return;
-    }
+<!-- 3 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1608528577891-eb055944f2e7">
+<h3>Midnight Elegance Perfume</h3>
+<a class="btn" href="https://www.daraz.pk/products/100-i884155427-s3912952700.html" target="_blank">Buy Now</a>
+</div>
 
-    const grid = document.getElementById('productGrid');
+<!-- 4 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1666694890565-93659106d39e">
+<h3>Dark Crystal Perfume</h3>
+<a class="btn" href="https://www.daraz.pk/products/acura-100ml-i433599761-s2081201839.html" target="_blank">Buy Now</a>
+</div>
 
-    const card = document.createElement('div');
-    card.className = 'card';
+<!-- 5 -->
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2019/11/29/12/36/perfume-4661231_1280.jpg">
+<h3>Crystal Noir Perfume</h3>
+<a class="btn" href="https://www.daraz.pk/products/black-and-gold-by-musk-al-mahal-original-attar-for-men-12ml-i286223094-s2043855926.html" target="_blank">Buy Now</a>
+</div>
 
-    card.innerHTML = `
-      <img src="${image}" alt="${name}">
-      <h4>${name}</h4>
-      <a href="${link}" target="_blank" class="btn">Buy Now</a>
-    `;
+<!-- 6 -->
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2025/08/27/18/57/perfume-9800422_1280.jpg">
+<h3>Golden Mist Fragrance</h3>
+<a class="btn" href="https://www.daraz.pk/products/100-i651533278-s3041366379.html" target="_blank">Buy Now</a>
+</div>
 
-    grid.appendChild(card);
-
-    document.getElementById('name').value = '';
-    document.getElementById('image').value = '';
-    document.getElementById('link').value = '';
-  }
-</script>
+</div>
 
 </body>
 </html>
