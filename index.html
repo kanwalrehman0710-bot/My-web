@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Royal Essence</title>
+<title>Royal Essence Perfume</title>
 
 <style>
 
+/* BACKGROUND */
 body{
     margin:0;
     font-family:Georgia, serif;
@@ -20,7 +21,8 @@ body::before{
     content:"";
     position:fixed;
     inset:0;
-    background:rgba(0,0,0,0.6);
+    background:rgba(0,0,0,0.65);
+    z-index:-1;
 }
 
 /* ROSE PETALS */
@@ -41,7 +43,7 @@ body::before{
     to{transform:translateY(120vh);}
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero{
     display:flex;
     align-items:center;
@@ -55,11 +57,14 @@ body::before{
     position:relative;
 }
 
+/* PERFUME (MAIN IMAGE) */
 .perfume{
-    width:500px;
-    filter:drop-shadow(0 0 50px rgba(139,0,0,0.7));
+    width:520px;
+    filter:drop-shadow(0 0 60px rgba(139,0,0,0.8));
+    transform:scale(1.05);
 }
 
+/* DECOR */
 .rose{
     position:absolute;
     top:40px;
@@ -69,29 +74,32 @@ body::before{
 
 .cherry{
     position:absolute;
-    top:150px;
+    top:160px;
     left:40px;
     width:70px;
 }
 
+/* TEXT */
 .right{
     flex:1;
     padding-left:40px;
 }
 
 .right h1{
-    font-size:60px;
+    font-size:65px;
     color:#d4af37;
     font-style:italic;
 }
 
+/* HEADER */
 header{
     text-align:center;
-    color:#d4af37;
     font-size:28px;
+    color:#d4af37;
     padding:20px;
 }
 
+/* PRODUCTS */
 .container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -102,7 +110,7 @@ header{
 .card{
     background:rgba(0,0,0,0.7);
     border:1px solid rgba(212,175,55,0.4);
-    border-radius:10px;
+    border-radius:12px;
     padding:12px;
     text-align:center;
 }
@@ -140,7 +148,7 @@ header{
 
 <div class="left">
 
-<!-- 🔥 YAHAN TUMHARI PNG IMAGE -->
+<!-- 🔥 PERFUME IMAGE (replace link later if needed) -->
 <img class="perfume" src="https://raw.githubusercontent.com/kanwalrehman0710-bot/My-web/main/Gemini_Generated_Image_kse69kkse69kkse6-Photoroom.png">
 
 <img class="rose" src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png">
@@ -150,7 +158,7 @@ header{
 
 <div class="right">
 <h1>Royal Essence</h1>
-<p>Luxury perfume crafted with elegance.</p>
+<p>Luxury perfume crafted with elegance and royalty.</p>
 </div>
 
 </section>
