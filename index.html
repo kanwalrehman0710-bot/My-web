@@ -6,6 +6,7 @@
 <title>Royal Essence</title>
 
 <style>
+
 body{
     margin:0;
     font-family:Georgia, serif;
@@ -14,15 +15,15 @@ body{
     color:white;
     overflow-x:hidden;
 }
+
 body::before{
     content:"";
     position:fixed;
     inset:0;
-    background:rgba(0,0,0,0.65);
-    z-index:-1;
+    background:rgba(0,0,0,0.6);
 }
 
-/* petals (one-by-one falling) */
+/* ROSE PETALS */
 .petal{
     position:fixed;
     top:-10%;
@@ -40,7 +41,7 @@ body::before{
     to{transform:translateY(120vh);}
 }
 
-/* hero */
+/* HERO */
 .hero{
     display:flex;
     align-items:center;
@@ -54,51 +55,50 @@ body::before{
     position:relative;
 }
 
-/* transparent perfume */
 .perfume{
-    width:480px;
+    width:500px;
     filter:drop-shadow(0 0 50px rgba(139,0,0,0.7));
 }
 
-/* decor */
 .rose{
     position:absolute;
     top:40px;
     right:60px;
     width:80px;
 }
+
 .cherry{
     position:absolute;
     top:150px;
-    left:30px;
+    left:40px;
     width:70px;
 }
 
-/* text */
 .right{
     flex:1;
     padding-left:40px;
 }
+
 .right h1{
     font-size:60px;
     color:#d4af37;
     font-style:italic;
 }
-.right p{color:#ddd;}
 
-/* products */
 header{
     text-align:center;
     color:#d4af37;
     font-size:28px;
     padding:20px;
 }
+
 .container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
     padding:40px;
 }
+
 .card{
     background:rgba(0,0,0,0.7);
     border:1px solid rgba(212,175,55,0.4);
@@ -106,12 +106,14 @@ header{
     padding:12px;
     text-align:center;
 }
+
 .card img{
     width:100%;
     height:220px;
     object-fit:cover;
     border-radius:10px;
 }
+
 .btn{
     display:inline-block;
     margin-top:10px;
@@ -121,12 +123,13 @@ header{
     text-decoration:none;
     border-radius:6px;
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- petals -->
+<!-- PETALS -->
 <div class="petal p1"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="40"></div>
 <div class="petal p2"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="40"></div>
 <div class="petal p3"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="40"></div>
@@ -134,10 +137,11 @@ header{
 <div class="petal p5"><img src="https://png.pngtree.com/png-vector/20250205/ourmid/pngtree-red-rose-petals-aesthetic-romantic-border-png-image_15387976.png" width="40"></div>
 
 <section class="hero">
+
 <div class="left">
 
-<!-- 👇 yahan apna transparent PNG link daalna -->
-<img class="perfume" src="YOUR_TRANSPARENT_IMAGE_LINK">
+<!-- 🔥 YAHAN TUMHARI PNG IMAGE -->
+<img class="perfume" src="https://raw.githubusercontent.com/kanwalrehman0710-bot/My-web/main/Gemini_Generated_Image_kse69kkse69kkse6-Photoroom.png">
 
 <img class="rose" src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png">
 <img class="cherry" src="https://cdn-icons-png.flaticon.com/512/590/590685.png">
@@ -146,13 +150,15 @@ header{
 
 <div class="right">
 <h1>Royal Essence</h1>
-<p>Luxury perfume crafted with elegance and bold identity.</p>
+<p>Luxury perfume crafted with elegance.</p>
 </div>
+
 </section>
 
 <header>Exclusive Collection</header>
 
 <div class="container">
+
 <div class="card">
 <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
 <h3>Red Luxury</h3>
@@ -170,6 +176,7 @@ header{
 <h3>Midnight Elegance</h3>
 <a class="btn" href="https://www.daraz.pk">Buy Now</a>
 </div>
+
 </div>
 
 </body>
